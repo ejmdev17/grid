@@ -36,3 +36,27 @@ Now you can visit [`localhost:5173`](http://localhost:5173) from your browser.
 Submit your results as a pull request to this repo with instruction on how to build/run it.
 
 Please let us know that you're finished!
+
+# Erik Miller Notes
+
+What the app does do is all the above mentioned requirements.  And it does so using the techstack the Vetspire uses.
+
+The app isn't perfect by any means due to time constraints of not spending more than a couple of hours on it.
+Some tradeoffs/assumptions I made besides the lacking items above.
+
+- The solution isn't generalized to any size grid.  I hardcoded it for 3x3.
+- I used css for the majority of the highlighting.  It keeps the react code simpler.
+- I created the cells and list them in order so they are placed in the correct location in the grid.
+- There are no tests on the front or back end.
+- Documentation is sparse.
+- I'm rusty in react so there are surely better ways of handling things.
+
+The app does meet all other requirements and is using the same stack that Vetspire uses.
+
+To run the app you should follow the same instructions as above and also...
+- docker-compose up - to start the database
+- ecto.setup - to setup the database
+- mix phx.server - to start the server
+- cd assets/frontend && yarn dev - to start the frontend
+
+This should start the app and you can visit localhost:5173 to see the app.
