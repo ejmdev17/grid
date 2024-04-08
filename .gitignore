@@ -37,3 +37,6 @@ npm-debug.log
 /assets/frontend/.vite
 /assets/frontend/.vscode
 
+.idea/
+*.iml
+
