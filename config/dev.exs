@@ -6,6 +6,7 @@ config :clinical_takehome, ClinicalTakehome.Repo,
   password: "postgres",
   hostname: "localhost",
   database: "clinical_takehome_dev",
+  port: 5444,
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
