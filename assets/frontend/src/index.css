@@ -66,3 +66,50 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1px;
+  background-color: #ffffff;
+}
+
+.cell {
+  height: 100px;
+  width: 100px;
+  color: #1a1a1a;
+}
+
+html body div.grid-container .toggled{
+  background-color: rgba(255, 255, 0, 1);
+}
+
+.grid-container:has(.row-0:hover) .row-0,
+.grid-container:has(.row-1:hover) .row-1,
+.grid-container:has(.row-2:hover) .row-2,
+.grid-container:has(.col-0:hover) .col-0,
+.grid-container:has(.col-1:hover) .col-1,
+.grid-container:has(.col-2:hover) .col-2
+{
+  background-color: rgba(255, 255, 0, 0.5);
+}
+
+.grid-container:has(.row-0:hover) .row-0.toggled,
+.grid-container:has(.row-1:hover) .row-1.toggled,
+.grid-container:has(.row-2:hover) .row-2.toggled,
+.grid-container:has(.col-0:hover) .col-0.toggled,
+.grid-container:has(.col-1:hover) .col-1.toggled,
+.grid-container:has(.col-2:hover) .col-2.toggled
+{
+  background-color: rgba(255, 255, 0, 1);
+}
+
+.grid-container:has(.row-0:hover) .row-0:hover,
+.grid-container:has(.row-1:hover) .row-1:hover,
+.grid-container:has(.row-2:hover) .row-2:hover,
+.grid-container:has(.col-0:hover) .col-0:hover,
+.grid-container:has(.col-1:hover) .col-1:hover,
+.grid-container:has(.col-2:hover) .col-2:hover
+{
+  background-color: rgba(255, 255, 0, 1);
+}
